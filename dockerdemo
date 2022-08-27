@@ -1,0 +1,35 @@
+Bro.Dilan Demo (Springboot Application)
+     mkdir........
+     git clone..........
+     cd repo...ls......cd app..edit Dockerfile(copy the package below and paste in your Dockerfile)
+
+     #Befhop Charity Foundation Inc    
+FROM node:12-alpine
+RUN apk add --no-cache python2 g++ make
+WORKDIR /app
+COPY . .
+RUN yarn install --production
+CMD ["node", "src/index.js"]
+EXPOSE 3000
+
+
+     docker build -t befhopcfapp:1 .
+
+     Dockerhub==========
+     docker login -u dilanoa1
+     docker image ls
+     docker tag befhopcfapp:1 dilanoa1/befhopcfapp:1
+     docker image ls
+     docker push dilanoa1/befhopcfapp:1
+     docker pull dilanoa1/befhopcfapp:1
+     docker run --name befhopcf-nodejs -dp 3000:3000 befhopcfapp:1 or
+     docker run -d -p --name befhopcf-nodejs 3000:3000 befhopcfapp:1 
+     www.http://172.30.144.1:3000/
+     
+     imageName==========  befhopcfapp  
+     containerName=======  befhopcf_nodejs
+
+
+    
+
+

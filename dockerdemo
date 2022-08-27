@@ -1,6 +1,6 @@
 Bro.Dilan Demo (Springboot Application)
      mkdir........
-     git clone..........
+     git clone..........  https://github.com/dilanAzu/befhopcf-nodejs.git
      cd repo...ls......cd app..edit Dockerfile(copy the package below and paste in your Dockerfile)
 
      #Befhop Charity Foundation Inc    
